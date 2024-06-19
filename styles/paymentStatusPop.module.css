@@ -1,0 +1,92 @@
+.mainWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    isolation: isolate;
+    position: fixed;
+    width: 266px;
+    height: 176px;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%,-50%);
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.crossButton{
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.iconDiv{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    /* background: url("../Images/PaymentStatusBg.svg"); */
+    /* border: solid 1px; */
+}
+
+.tickMark{
+    height: 26px;
+    width: 33px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* border: solid 1px; */
+}
+
+.crossMark{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* border: solid 1px; */
+}
+
+.botDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 226px;
+    height: 46px;
+    flex: none;
+    flex-grow: 0;
+    /* border: solid 1px; */
+}
+
+.bigFont{
+    position: relative;
+    width: 179px;
+    height: 24px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2B2B2B;
+    /* border: solid 1px; */
+}
+
+.smallFont{
+    position: relative;
+    width: 226px;
+    height: 18px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    color: #8391A1;
+    /* border: solid 1px; */
+}

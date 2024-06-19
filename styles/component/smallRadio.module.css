@@ -1,0 +1,111 @@
+.radioDivSpan{
+    width: fit-content;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    /* border: solid 1px; */
+}
+
+.radioDivSpan p{
+    font-family: 'Product Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    color: #333333;
+    width:max-content;
+    padding: 0px;
+    margin: 0px;
+    text-transform: capitalize;
+    /* border: solid 1px; */
+}
+
+.customRadio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    border-radius:50% ;
+    height: 0.9375rem;
+    width: 0.9375rem ;
+    cursor: pointer;
+}
+
+.customRadio input:checked + .customRadio {
+    border: 0;
+}
+
+.radio {
+    align-self: center;
+    display: none;
+}
+
+.customRadio .checkmark {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid #D8D8D8 1.5px;
+    z-index: 2;
+    transition: 0.4s;
+    /* transition-: ; */
+    /* position: absolute;
+    left: -0.2px;
+    width: 105%;
+    height: 105%;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opactity 1 ease;
+    background-color: black; */
+}
+
+.customRadio input:checked + .checkmark{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    border:solid 0.3119rem #3366FF;
+    opacity: 1;
+}
+
+.checkmark::before{
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    opacity: 1;
+    background-color: white;
+    top: 0;
+    left:0 ;
+    right: 0;
+    bottom: 0;
+    transform: scale(0.4);
+    z-index: 1;
+}
+
+.checkmark::after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    transform: scale(0);
+    top: 0;
+    left:0 ;
+    right: 0;
+    bottom: 0;
+    background: #3366FF;
+    opacity: 0;
+    transition: .6s;
+  }
+
+.customRadio input:checked+.checkmark::after{
+    opacity: .2;
+    transform: scale(1.4);
+}

@@ -1,0 +1,260 @@
+.popContainer{
+    position: fixed;
+    isolation: isolate;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%,-50%);
+    width: 370px;
+    height: 368px;
+    background: #FFFFFF;
+    z-index: 5;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.crossButton{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #454545;
+    cursor: pointer;
+}
+
+.topDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    position: relative;
+    width: 149px;
+    height: 24px;
+    left: -6px;
+    /* top: 20px; */
+    /* border: solid 1px; */
+}
+
+.topic{
+    width: 119px;
+    height: 20px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    /* border: solid 1px; */
+}
+
+.backIcon{
+    font-size:larger;
+    color: #454545;
+    cursor: pointer;
+}
+
+.midDiv{
+    height: 189px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    border-bottom: 1.4452px solid #D8D8D8;;
+}
+
+.labels{
+    width: fit-content;
+    height: 19px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    flex-grow: 0;
+}
+
+.selectPlanDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 330px;
+    height: 78px;
+    /* border: solid 1px; */
+    /* left: 20px;
+    top: 60px; */
+}
+
+.packageDetailsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    width: 330px;
+    height: 51px;
+    background: rgba(0, 0, 255, 0.05);
+    border-radius: 4px;
+    flex: none;
+    flex-grow: 0;
+}
+
+.packageDetails{
+    width: fit-content;
+    height: 19px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #012367;
+    flex: none;
+    border: 0;
+    flex-grow: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.packageDetails b{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #0000FF;
+}
+
+.packagePrice{
+    width: fit-content;
+    height: 19px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #081F32;
+    flex: none;
+    flex-grow: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.paymentDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 110.62px;
+    height: 71px;
+    /* left: 20px;
+    top: 158px; */
+    /* border: solid 1px; */
+}
+
+.paymentOption{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+    width: 110.62px;
+    height: 44px;
+    background: rgba(51, 102, 255, 0.1);
+    border: 1px solid #0000FF;
+    border-radius: 4px;
+    flex: none;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.imageDiv{
+    width: 90.62px;
+    height: 24px;
+    border-radius: 2px;
+    /* border: solid 1px; */
+}
+
+.totalPayDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 154px;
+    width: 328px;
+    height: 24px;
+    /* border: solid 1px; */
+    /* position: absolute;
+    left: 22px;
+    top: 266px; */
+}
+
+.totalPay{
+    width: fit-content;
+    height: 24px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2C2C2C;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.totalPayAmount{
+    width: fit-content;
+    height: 24px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #081F32;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.confirmButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    position: absolute;
+    width: 330px;
+    height: 40px;
+    left: 20px;
+    top: 308px;
+    background: #0000FF;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    cursor: pointer;
+}

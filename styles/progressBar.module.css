@@ -1,0 +1,263 @@
+.progressSteps{
+    position: relative;
+    height: 100px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    /* border: solid 1px; */
+}
+
+.firstCircleDiv{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse ;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 86.25px;
+    height: 48px;
+    flex: none;
+    flex-grow: 1;
+    /* border: solid 1px; */
+}
+
+.circleDiv{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 86.25px;
+    height: 48px;
+    flex: none;
+    flex-grow: 1;
+    /* border: solid 1px; */
+}
+
+.finalCircleDiv{
+    position: relative;
+    display: flex;
+    flex-direction: row  ;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 86.25px;
+    height: 48px;
+    flex: none;
+    flex-grow: 1;
+    /* border: solid 1px; */
+}
+
+.firstProgressLine{
+    height:2px;
+    /* transform: rotate(90deg); */
+    background-color: gray;
+    width:  27.12px;
+    border: none;
+    /* border-top:solid 1px gray;
+    border-bottom:solid 1px gray; */
+    margin: 0px;
+}
+
+.progressLine{
+    /* position: absolute; */
+    /* top: 50px; */
+    /* align-self: center; */
+    height:2px;
+    width: 100%;
+    border: none;
+    /* border-top: solid 1px #012367;
+    border-bottom: solid 1px #012367; */
+    margin: 0px;
+}
+
+.outerCircle{
+    position: absolute;
+    left: 21.12px;
+    bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    gap: 10px;
+    width: 44px;
+    height: 44px;
+    border:solid #012367 1px;
+    border-radius: 100px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-color: white;
+}
+
+.innerCircle{
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    background: #012367;
+    color: white;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.descriptionDiv{
+    /* border: solid 1px red; */
+    display: none;
+    /* flex-direction: column;
+    justify-content: center;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #444444;
+    flex: none;
+    flex-grow: 0; */
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1024px){
+    .progressSteps{
+        position: relative;
+        height: 100px;
+        width: 164px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 8px;
+        /* border: solid 1px; */
+    }
+    
+    .firstCircleDiv{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse  ;
+        align-items: center;
+        width: 44px;
+        height: 100px;
+        flex-grow: 0;
+        border: 0;
+    }
+    
+    .circleDiv{
+        position: relative;
+        display: flex;
+        width: 44px;
+        height: 100px;
+        justify-content: center;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        border: 0;
+    }
+    
+    .finalCircleDiv{
+        position: relative;
+        display: flex;
+        flex-direction: column  ;
+        align-items: center;
+        width: 44px ;
+        height: 100px;
+        flex-grow: 0;
+        border: 0;
+    }
+    
+    .firstProgressLine{
+        height:50px;
+        background-color: gray;
+        width: 2px;
+        /* border-right:solid 1px gray;
+        border-left:solid 1px gray; */
+        margin: 0px;
+    }
+    
+    .progressLine{
+        position: absolute;
+        /* left: 20.5px; */
+        height:100px;
+        background-color: #012367;
+        width: 2px;
+        /* border-right: solid 1px #012367;
+        border-left: solid 1px #012367; */
+        margin: 0px;
+        /* z-index: 1; */
+    }
+    
+    .outerCircle{
+        position: absolute;
+        left: 0px;
+        top:28px;
+        width: 44px;
+        height: 44px;
+        border-radius: 100px;
+        border: solid #012367;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        z-index: 0;
+    }
+    
+    .innerCircle{
+        position: relative;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        width: 32px;
+        height: 32px;
+        background: #012367;
+        color: white;
+        border-radius: 100px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    
+    .descriptionDiv{
+        /* border: solid 1px    red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Product Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #444444;
+        flex: none;
+        flex-grow: 0;
+    }
+}
+
+
+

@@ -1,0 +1,89 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @font-face {
+  font-family:"Product Sans";
+  src:local('Product Sans'), url("/public/Fonts/ProductSans.woff2") format('woff2');
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+/* ==================****************===============
+CSS TO CHANGE ANT-DESIGN COMPONENTS */
+/* ==================****************===============
+CSS TO CHANGE ANT-DESIGN COMPONENTS */
+.ant-upload-list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+}
+
+.ant-upload-picture-card-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+.ant-upload {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none !important;
+  height: 100px;
+}
+
+.ant-upload-select-picture-card {
+  border: none !important;
+  /* width: 120px; */
+}
+
+/* .ant-upload-list-picture-card-container {
+  width: 120px !important;
+  height: 110px !important;
+} */
+
+.fileListUploadedState {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  width: 100px !important;
+  height: 102px !important;
+  background: #f6f6f6;
+  border: 1px solid #d8dce6;
+  border-radius: 10px;
+  order: 4;
+  flex-grow: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ant-upload-list-item-error {
+  border-color: #d8dce6 !important;
+  border-radius: 10px !important;
+}
+/* ==================****************===============
+/* ==================****************===============
+END OF CSS TO CHANGE ANT-DESIGN COMPONENTS */
